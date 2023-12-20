@@ -16,6 +16,7 @@
 		CE046C942B1A2510008AB05E /* learningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE046C932B1A2510008AB05E /* learningTests.swift */; };
 		CE046C9E2B1A2510008AB05E /* learningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE046C9D2B1A2510008AB05E /* learningUITests.swift */; };
 		CE046CA02B1A2510008AB05E /* learningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE046C9F2B1A2510008AB05E /* learningUITestsLaunchTests.swift */; };
+		CEF054FC2B1BC9ED00315590 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF054FB2B1BC9ED00315590 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CE046C992B1A2510008AB05E /* learningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE046C9D2B1A2510008AB05E /* learningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningUITests.swift; sourceTree = "<group>"; };
 		CE046C9F2B1A2510008AB05E /* learningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEF054FB2B1BC9ED00315590 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				CE046C7C2B1A250E008AB05E /* AppDelegate.swift */,
+				CEF054FB2B1BC9ED00315590 /* AboutViewController.swift */,
 				CE046C7E2B1A250E008AB05E /* SceneDelegate.swift */,
 				CE046C802B1A250E008AB05E /* ViewController.swift */,
 				CE046C822B1A250E008AB05E /* Main.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				CE046C812B1A250E008AB05E /* ViewController.swift in Sources */,
 				CE046C7D2B1A250E008AB05E /* AppDelegate.swift in Sources */,
+				CEF054FC2B1BC9ED00315590 /* AboutViewController.swift in Sources */,
 				CE046C7F2B1A250E008AB05E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,26 +444,33 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V9HJ4JCC4T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = learning/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Slider Game";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Yaroslav.learning;
+				PRODUCT_BUNDLE_IDENTIFIER = SliderGameCreatedByYaroslav;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -468,26 +479,33 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V9HJ4JCC4T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = learning/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Slider Game";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Yaroslav.learning;
+				PRODUCT_BUNDLE_IDENTIFIER = SliderGameCreatedByYaroslav;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
